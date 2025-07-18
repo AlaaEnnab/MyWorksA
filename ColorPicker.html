@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorPicker</title>
+
+
+  <style>
+
+
+.color-picker{
+  display: grid;
+   /* display:inline-grid; */
+    background-color: darkgray;
+   grid-template-columns: auto auto auto auto;
+
+   
+    width: 300px;
+    /* column-gap: 50px;
+    row-gap: 50px; */
+    justify-content: left;
+    gap: 10px;
+   
+}
+
+
+/* 
+    .color-option {
+
+      position: relative;
+
+    } */
+
+
+
+     .color-option input[type="radio"] {
+
+      display: none;
+
+    } 
+
+
+
+    .color-box {
+
+      width: 50px;
+
+      height: 50px;
+      border-radius: 50%;
+
+      display: block;
+
+      border: 2px solid transparent;
+
+      cursor: pointer;
+     
+
+    }
+
+
+
+    /* Style for checked option */
+
+    .color-option input[type="radio"]:checked + .color-box {
+
+      border: 3px solid #000;
+
+    }
+
+
+
+    /* Individual color styles */
+    .brown{background-color: brown;}
+    .red { background-color: red; }
+    .blue { background-color: blue; }
+    .green { background-color: green; }
+    .yellow { background-color: yellow; }
+    .black { background-color: black; }
+    .gray {background-color: gray;}
+    .purple{background-color: purple;}
+    .pink{background-color: pink;}
+    .pink2{background-color: hotpink;}
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <h2>Select a Color:</h2>
+
+
+
+    <form class="color-picker">
+      <label class="color-option">
+
+      <input type="radio" name="color" value="red">
+
+      <span class="color-box red"></span>
+      </label>
+
+
+
+    <label class="color-option">
+
+      <input type="radio" name="color" value="blue">
+
+      <span class="color-box blue"></span>
+
+    </label>
+
+
+
+    <label class="color-option">
+
+      <input type="radio" name="color" value="green">
+
+      <span class="color-box green"></span>
+
+    </label>
+
+
+
+    <label class="color-option">
+
+      <input type="radio" name="color" value="yellow">
+
+      <span class="color-box yellow"></span>
+
+    </label>
+
+
+
+    <label class="color-option">
+
+      <input type="radio" name="color" value="black">
+
+      <span class="color-box black"></span>
+
+    </label>
+    
+    <label class="color-option">
+
+      <input type="radio" name="color" value="pink">
+
+      <span class="color-box pink"></span>
+
+    </label>
+    
+    <label class="color-option">
+
+      <input type="radio" name="color" value="hotpink">
+
+      <span class="color-box pink2"></span>
+
+    </label>
+    
+    <label class="color-option">
+
+      <input type="radio" name="color" value="purple">
+
+      <span class="color-box purple"></span>
+
+    </label>
+    
+    <label class="color-option">
+
+      <input type="radio" name="color" value="gray">
+
+      <span class="color-box gray"></span>
+
+    </label>
+
+    <label class="color-option">
+
+      <input type="radio" name="color" value="brown">
+
+      <span class="color-box brown"></span>
+
+    </label>
+  </form>
+  
+</body>
+
+</html>
